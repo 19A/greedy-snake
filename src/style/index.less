@@ -24,8 +24,9 @@ body{
     height: 304px;
     border: 2px solid #000000;
     position: relative;
-    .snake{
-      &>div{
+    #snake{
+      position: absolute;
+      & > div{
         width: 10px;
         height: 10px;
         background-color: #000000;
@@ -35,17 +36,17 @@ body{
         left: 0;
       }
     }
-    .food{
+    #food{
       width: 10px;
       height: 10px;
-       position: absolute;
-       top: 40px;
-       left: 100px;
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       align-content: space-between;
-      &>div {
+      position: absolute;
+      top: 40px;
+      left: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      & > div {
         width: 4px;
         height: 4px;
         background-color: #000000;
